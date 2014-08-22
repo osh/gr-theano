@@ -19,5 +19,6 @@
 
 install(FILES
     siggen.xml
+    fft.xml
     DESTINATION share/gnuradio/grc/blocks
 )

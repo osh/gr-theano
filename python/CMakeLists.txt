@@ -32,6 +32,7 @@ GR_PYTHON_INSTALL(
     FILES
     __init__.py
     siggen.py
+    tfft.py
     DESTINATION ${GR_PYTHON_DIR}/grtheano
 )
 

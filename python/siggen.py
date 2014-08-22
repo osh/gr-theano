@@ -53,7 +53,7 @@ class siggen(gr.sync_block):
 
     def __init__(self, fs, f):
         gr.sync_block.__init__(self,
-            name="theano_seggen",
+            name="theano_siggen",
             in_sig=[],
             out_sig=[numpy.complex64])
         self.fs = fs

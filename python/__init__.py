@@ -24,6 +24,8 @@ description here (python/__init__.py).
 '''
 
 from siggen import *
+from tfft import *
+
 # import swig generated symbols into the theano namespace
 #try:
 #	# this might fail if the module is python-only
