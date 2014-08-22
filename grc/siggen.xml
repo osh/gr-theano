@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<block>
+  <name>Theano Siggen</name>
+  <key>theano_siggen</key>
+  <category>theano</category>
+  <import>import grtheano</import>
+  <make>grtheano.siggen()</make>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>
