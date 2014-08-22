@@ -4,10 +4,27 @@
   <key>theano_siggen</key>
   <category>theano</category>
   <import>import grtheano</import>
-  <make>grtheano.siggen()</make>
+  <make>grtheano.siggen($fs,$f)</make>
+  
+  <callback>set_f($f)</callback>
+
+  <param>
+    <name>Sample Rate</name>
+    <key>fs</key>
+    <value>samp_rate</value>
+    <type>float</type>
+  </param>
+
+  <param>
+    <name>Frequency</name>
+    <key>f</key>
+    <value>400.0</value>
+    <type>float</type>
+  </param>
 
   <source>
     <name>out</name>
     <type>complex</type>
   </source>
+
 </block>
