@@ -21,6 +21,11 @@
     <value>400.0</value>
     <type>float</type>
   </param>
+  
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
 
   <source>
     <name>out</name>
