@@ -33,6 +33,7 @@ GR_PYTHON_INSTALL(
     __init__.py
     siggen.py
     tfft.py
+    fader.py
     DESTINATION ${GR_PYTHON_DIR}/grtheano
 )
 

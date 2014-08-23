@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<block>
+  <name>Theano Fader</name>
+  <key>theano_fader</key>
+  <category>theano</category>
+  <import>import grtheano</import>
+  <make>grtheano.fader($fs,$f)</make>
+  
+  <callback>set_f($f)</callback>
+
+  <param>
+    <name>Sample Rate</name>
+    <key>fs</key>
+    <value>samp_rate</value>
+    <type>float</type>
+  </param>
+
+  <param>
+    <name>Frequency</name>
+    <key>f</key>
+    <value>400.0</value>
+    <type>float</type>
+  </param>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+
+</block>
