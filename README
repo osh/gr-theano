@@ -5,6 +5,7 @@ leverage the theano library to accelerate signal processing
 code on graphcis cards typically using Cuda as a backend.
 
 Enjoy!
+Tim O'Shea <tim.oshea753@gmail.com>
 
 Current Blocks:
 ~~~~~~~~~~~~
