@@ -6,6 +6,15 @@ code on graphcis cards typically using Cuda as a backend.
 
 Enjoy!
 
+Current Blocks:
+~~~~~~~~~~~~
+Signal Source (sinusoid complex64)
+Fading Model (single tap complex64)
+FIR Filter (float32)
+FFT (complex64)
+
+Information:
+~~~~~~~~~~~~
 For the latest verison please see 
 https://github.com/osh/gr-theano
 
