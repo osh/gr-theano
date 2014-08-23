@@ -26,6 +26,7 @@ description here (python/__init__.py).
 from siggen import *
 from tfft import *
 from fader import *
+from fir import *
 
 # import swig generated symbols into the theano namespace
 #try:

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<block>
+  <name>Theano FIR</name>
+  <key>theano_fir</key>
+  <category>theano</category>
+  <import>import grtheano</import>
+  <import>import numpy</import>
+  <make>grtheano.fir($taps)</make>
+  
+  <callback>set_taps($taps)</callback>
+
+  <param>
+    <name>Taps</name>
+    <key>taps</key>
+    <value>numpy.ones(100, dtype=numpy.float32)</value>
+    <type>raw</type>
+  </param>
+  
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+
+</block>
