@@ -1,0 +1,14 @@
+GNU Radio Theano block library!
+
+This OOT module contains a number of GNU Radio blocks which 
+leverage the theano library to accelerate signal processing 
+code on graphcis cards typically using Cuda as a backend.
+
+Enjoy!
+
+Howto build:
+~~~~~~~~~~~~
+1. Install GNU Radio 3.7+
+2. Install Theano
+    pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
+3. Install gr-threano as with any GNU Radio OOT Module

@@ -1,36 +1,33 @@
 #!/usr/bin/env python
-import numpy
-import theano
+#
+# Copyright 2014 Tim O'Shea
+#
+# This is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3, or (at your option)
+# any later version.
+#
+# This software is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this software; see the file COPYING.  If not, write to
+# the Free Software Foundation, Inc., 51 Franklin Street,
+# Boston, MA 02110-1301, USA.
+#
+import numpy, theano, time
 import theano.tensor as T
-import time
-#rng = numpy.random
-
-
-
-
-
-
-# GNU Radio block
-import numpy
 from gnuradio import gr, blocks, audio
 class siggen(gr.sync_block):
-
-    # some consts
     N = 4096
-#    fs = 44100.0;
-#    tone = 400.0;
-
-    # theano vars
     step = T.vector("step", dtype="complex64")
     l = T.iscalar("l")
     stepd = theano.shared(numpy.zeros(N, dtype=numpy.complex64), name="stepd")
     phase = theano.shared(numpy.asarray(1+0j, dtype=numpy.complex64), name="phase")
-
-    # theano mappings
     oo = phase * stepd;
     oos = oo[0:l]
-
-    # theano functions
     set_step = theano.function(
             inputs=[step],
             outputs=[],
@@ -43,10 +40,7 @@ class siggen(gr.sync_block):
             name="rval")
 
     def set_f(self, f):
-        print "set_f %f"%(f)
         self.f = f;
-        
-        # set up step table
         stepval = numpy.pi*2*self.f/self.fs;
         iv = numpy.exp(1j*numpy.arange(0,self.N,stepval, dtype=numpy.float32) , dtype=numpy.complex64);
         self.set_step( iv );
