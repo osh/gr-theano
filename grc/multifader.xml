@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<block>
+  <name>Theano Multi-Fader</name>
+  <key>theano_multifader</key>
+  <category>theano</category>
+  <import>import grtheano</import>
+  <make>grtheano.multifader($fs,$f)</make>
+  
+  <callback>set_f($f)</callback>
+
+  <param>
+    <name>Sample Rate</name>
+    <key>fs</key>
+    <value>samp_rate</value>
+    <type>float</type>
+  </param>
+
+  <param>
+    <name>Frequency</name>
+    <key>f</key>
+    <value>400.0</value>
+    <type>float</type>
+  </param>
+  
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+
+</block>

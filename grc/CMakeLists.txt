@@ -21,6 +21,7 @@ install(FILES
     siggen.xml
     fft.xml
     fader.xml
+    multifader.xml
     fir.xml
     DESTINATION share/gnuradio/grc/blocks
 )
