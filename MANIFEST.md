@@ -12,7 +12,7 @@ dependencies:
   - gnuradio (>= 3.7.0)
 repo: https://github.com/osh/gr-theano.git
 stable_release: HEAD
-icon: http://doge2048.com/meta/doge-600.png
+icon: http://www.jasongiles.com/jasongiles/projects/NVIDIA/images/CUDA_Visual_Profiler-full.jpg
 ---
 
 GNU Radio Theano block library!
