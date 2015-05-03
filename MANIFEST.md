@@ -23,25 +23,25 @@ code on graphcis cards typically using Cuda as a backend.
 
 # Current Blocks
 
-Signal Source (sinusoid complex64)
-Fading Model (single tap complex64)
-FIR Filter (float32)
-FFT (complex64)
+- Signal Source (sinusoid complex64)
+- Fading Model (single tap complex64)
+- FIR Filter (float32)
+- FFT (complex64)
 
 # Information
 
 For the latest verison please see
-https://github.com/osh/gr-theano
+[gr-theano Github repo]https://github.com/osh/gr-theano
 
 For more information on the theano project please see
-https://github.com/Theano/Theano
-http://deeplearning.net/software/theano/
-http://nbviewer.ipython.org/github/craffel/theano-tutorial/blob/master/Theano%20Tutorial.ipynb
-https://archive.org/details/Scipy2010-JamesBergstra-TransparentGpuComputingWithTheano
+- [Theano Github repo]https://github.com/Theano/Theano
+- [Theano Documentation]http://deeplearning.net/software/theano/
+- [Theano tutorial]http://nbviewer.ipython.org/github/craffel/theano-tutorial/blob/master/Theano%20Tutorial.ipynb
+- [A video on Transparent GPU computing with Theano]https://archive.org/details/Scipy2010-JamesBergstra-TransparentGpuComputingWithTheano
 
 # Howto build
 
 1. Install GNU Radio 3.7+
 2. Install Theano
     pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
-3. Install gr-threano as with any GNU Radio OOT Module
+3. Install gr-threano just like any GNU Radio OOT Module
