@@ -31,13 +31,13 @@ code on graphcis cards typically using Cuda as a backend.
 # Information
 
 For the latest verison please see
-[gr-theano Github repo]https://github.com/osh/gr-theano
+[gr-theano Github repo](https://github.com/osh/gr-theano)
 
 For more information on the theano project please see
-- [Theano Github repo]https://github.com/Theano/Theano
-- [Theano Documentation]http://deeplearning.net/software/theano/
-- [Theano tutorial]http://nbviewer.ipython.org/github/craffel/theano-tutorial/blob/master/Theano%20Tutorial.ipynb
-- [A video on Transparent GPU computing with Theano]https://archive.org/details/Scipy2010-JamesBergstra-TransparentGpuComputingWithTheano
+- [Theano Github repo](https://github.com/Theano/Theano)
+- [Theano Documentation](http://deeplearning.net/software/theano/)
+- [Theano tutorial](http://nbviewer.ipython.org/github/craffel/theano-tutorial/blob/master/Theano%20Tutorial.ipynb)
+- [A video on Transparent GPU computing with Theano](https://archive.org/details/Scipy2010-JamesBergstra-TransparentGpuComputingWithTheano)
 
 # Howto build
 
