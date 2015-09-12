@@ -23,8 +23,8 @@ from theano.tensor.signal import conv
 from gnuradio import gr, blocks, audio
 class fir(gr.sync_block):
     # some consts
-    x = T.matrix("x")
-    y = T.matrix("y")
+    x = T.fmatrix("x")
+    y = T.fmatrix("y")
 
     def set_taps(self, taps):
         print "set_taps"
